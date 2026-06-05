@@ -1,2 +1,5 @@
-# FC-front
-repositório de formação complementar 2026
+# Formação Complementar FS/Front
+
+## HTNK & CSS
+## JavaScript & TypeScript
+## Ecossistema React
