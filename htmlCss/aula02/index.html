@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - CSS - Js - Responsividade</title>
+     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+     <link href="./css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+    <section class="container">
+        <header role="banner">
+            <h1>Exemplo de Acessibilidade e Responsividade</h1>
+        </header>
+        <main id="conteudo-principal" role="main">
+            
+            <div class="grid">
+                
+                <article class="card">
+                    <h2>Estrutura Semântica</h2>
+                    <p>Uso de tags como <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code> e cabeçalhos ordenados de forma hierárquica correta, garantindo que leitores de ecrã naveguem pelo documento de forma lógica.</p>
+                </article>
+
+                <article class="card">
+                    <h2>Componente Retrátil (Accordion)</h2>
+                    <p class="card-text">Clique no botão abaixo para testar o comportamento acessível com JavaScript.</p>
+                    
+                    <button 
+                        type="button" 
+                        class="trigger-button" 
+                        id="btn-accordion" 
+                        aria-expanded="false" 
+                        aria-controls="painel-accordion">
+                        Leia mais sobre acessibilidade
+                    </button>
+                    
+                    <div 
+                        id="painel-accordion" 
+                        class="content-panel" 
+                        role="region" 
+                        aria-labelledby="btn-accordion">
+                        <p>Este painel atualiza o atributo <code>aria-expanded</code> para avisar o utilizador de leitor de tela se o conteúdo está aberto ou fechado.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2>Design Responsivo</h2>
+                    <p>Este layout utiliza CSS Grid com <code>auto-fit</code>. Experimente redimensionar a janela do navegador: os cards reorganizam-se automaticamente sem quebras de layout e sem depender de media queries complexas.</p>
+                </article>
+
+            </div>
+
+        </main>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
